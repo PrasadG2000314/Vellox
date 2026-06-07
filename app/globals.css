@@ -58,23 +58,23 @@
   --card-foreground: oklch(0.18 0.02 245);
   --popover: oklch(0.99 0.005 245);
   --popover-foreground: oklch(0.18 0.02 245);
-  --primary: oklch(0.55 0.20 245); /* Logo Electric Blue */
+  --primary: oklch(0.45 0.18 245); /* Logo Electric Blue (darkened for light mode contrast) */
   --primary-foreground: oklch(0.99 0.005 245);
-  --secondary: oklch(0.94 0.01 245); /* Light cool gray */
-  --secondary-foreground: oklch(0.25 0.02 245);
-  --muted: oklch(0.94 0.01 245);
-  --muted-foreground: oklch(0.48 0.04 245); /* Muted slate */
-  --accent: oklch(0.65 0.17 135); /* Logo Lime Green (darker for text contrast) */
+  --secondary: oklch(0.94 0.02 245); /* Light cool gray */
+  --secondary-foreground: oklch(0.20 0.03 245);
+  --muted: oklch(0.94 0.02 245);
+  --muted-foreground: oklch(0.40 0.04 245); /* Muted slate, darkened */
+  --accent: oklch(0.45 0.15 135); /* Logo Lime Green (darkened for light mode contrast) */
   --accent-foreground: oklch(0.99 0.005 245);
   --destructive: oklch(0.55 0.22 25);
-  --border: oklch(0.88 0.01 245);
-  --input: oklch(0.90 0.01 245);
-  --ring: oklch(0.55 0.20 245);
-  --chart-1: oklch(0.55 0.20 245);
-  --chart-2: oklch(0.65 0.17 135);
-  --chart-3: oklch(0.48 0.04 245);
-  --chart-4: oklch(0.88 0.01 245);
-  --chart-5: oklch(0.25 0.02 245);
+  --border: oklch(0.85 0.02 245);
+  --input: oklch(0.88 0.02 245);
+  --ring: oklch(0.45 0.18 245);
+  --chart-1: oklch(0.45 0.18 245);
+  --chart-2: oklch(0.45 0.15 135);
+  --chart-3: oklch(0.40 0.04 245);
+  --chart-4: oklch(0.85 0.02 245);
+  --chart-5: oklch(0.20 0.03 245);
   --radius: 0.875rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
@@ -86,48 +86,48 @@
   --sidebar-ring: oklch(0.708 0 0);
 
   /* custom tokens */
-  --glass: oklch(1 0 0 / 0.55);
-  --glass-border: oklch(1 0 0 / 0.6);
-  --glow: oklch(0.55 0.20 245);
-  --cyan: oklch(0.65 0.17 135); /* Logo green for light mode */
+  --glass: oklch(1 0 0 / 0.85); /* Increased opacity for better navbar visibility */
+  --glass-border: oklch(1 0 0 / 0.8);
+  --glow: oklch(0.45 0.18 245);
+  --cyan: oklch(0.45 0.15 135); 
 }
 
 .dark {
-  --background: oklch(0.10 0.015 245); /* Deep space navy (instead of pure dark gray) */
+  --background: oklch(0.08 0.015 245); /* Deep space navy */
   --foreground: oklch(0.985 0.003 245); /* Pure crisp silver-white */
-  --card: oklch(0.14 0.015 245);
+  --card: oklch(0.12 0.015 245);
   --card-foreground: oklch(0.985 0.003 245);
-  --popover: oklch(0.12 0.015 245);
+  --popover: oklch(0.10 0.015 245);
   --popover-foreground: oklch(0.985 0.003 245);
-  --primary: oklch(0.60 0.18 245); /* Lighter electric blue for dark mode glow */
+  --primary: oklch(0.70 0.20 245); /* Bright electric blue for dark mode glow */
   --primary-foreground: oklch(0.10 0.015 245);
-  --secondary: oklch(0.18 0.015 245);
+  --secondary: oklch(0.16 0.02 245);
   --secondary-foreground: oklch(0.985 0.003 245);
-  --muted: oklch(0.16 0.015 245);
-  --muted-foreground: oklch(0.70 0.02 245); /* Lighter cool gray */
-  --accent: oklch(0.78 0.17 135); /* Logo Lime Green (glowing for dark mode) */
+  --muted: oklch(0.16 0.02 245);
+  --muted-foreground: oklch(0.75 0.02 245); /* Lighter cool gray */
+  --accent: oklch(0.80 0.18 135); /* Bright Lime Green */
   --accent-foreground: oklch(0.10 0.015 245);
   --destructive: oklch(0.55 0.22 25);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.60 0.18 245);
-  --chart-1: oklch(0.60 0.18 245);
-  --chart-2: oklch(0.78 0.17 135);
-  --chart-3: oklch(0.70 0.02 245);
+  --border: oklch(1 0 0 / 15%);
+  --input: oklch(1 0 0 / 20%);
+  --ring: oklch(0.70 0.20 245);
+  --chart-1: oklch(0.70 0.20 245);
+  --chart-2: oklch(0.80 0.18 135);
+  --chart-3: oklch(0.75 0.02 245);
   --chart-4: oklch(0.18 0.015 245);
   --chart-5: oklch(0.16 0.015 245);
-  --sidebar: oklch(0.14 0.015 245);
+  --sidebar: oklch(0.12 0.015 245);
   --sidebar-foreground: oklch(0.985 0.003 245);
-  --sidebar-primary: oklch(0.60 0.18 245);
+  --sidebar-primary: oklch(0.70 0.20 245);
   --sidebar-primary-foreground: oklch(0.10 0.015 245);
-  --sidebar-accent: oklch(0.18 0.015 245);
+  --sidebar-accent: oklch(0.16 0.02 245);
   --sidebar-accent-foreground: oklch(0.985 0.003 245);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.60 0.18 245);
+  --sidebar-border: oklch(1 0 0 / 15%);
+  --sidebar-ring: oklch(0.70 0.20 245);
   
   /* custom tokens dark mode override */
-  --glow: oklch(0.60 0.18 245);
-  --cyan: oklch(0.78 0.17 135); /* Logo green for dark mode */
+  --glow: oklch(0.70 0.20 245);
+  --cyan: oklch(0.80 0.18 135); /* Logo green for dark mode */
 }
 
 @layer base {
