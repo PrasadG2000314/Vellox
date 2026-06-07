@@ -196,11 +196,12 @@ export default function ShaderBackground({ className }: { className?: string }) 
       gl.uniform2f(programInfo.uniformLocations.resolution, canvas.width, canvas.height)
       gl.uniform1f(programInfo.uniformLocations.time, currentTime)
 
-      // Dynamic theme colors
+      // Dynamic theme colors matching VELLOX Brand (Electric Blue & Lime Green)
       const isDark = themeRef.current === "dark"
-      const bg1 = isDark ? [0.04, 0.07, 0.16, 1.0] : [0.96, 0.97, 0.99, 1.0]
-      const bg2 = isDark ? [0.06, 0.12, 0.26, 1.0] : [0.91, 0.93, 0.97, 1.0]
-      const lineCol = isDark ? [0.30, 0.55, 1.0, 1.0] : [0.35, 0.55, 0.90, 0.85]
+      const bg1 = isDark ? [0.02, 0.03, 0.07, 1.0] : [0.99, 0.99, 1.0, 1.0]
+      const bg2 = isDark ? [0.05, 0.08, 0.18, 1.0] : [0.94, 0.96, 0.98, 1.0]
+      // Line color: Electric Blue
+      const lineCol = isDark ? [0.15, 0.50, 1.0, 1.0] : [0.10, 0.40, 0.95, 0.65]
 
       gl.uniform4fv(programInfo.uniformLocations.bgColor1, bg1)
       gl.uniform4fv(programInfo.uniformLocations.bgColor2, bg2)
