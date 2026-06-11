@@ -16,6 +16,7 @@ export function MagneticButton({ children, onClick, variant = "primary", classNa
   const inner = useRef<HTMLSpanElement>(null)
 
   const handleMove = (e: MouseEvent<HTMLButtonElement>) => {
+    if (typeof window !== "undefined" && !window.matchMedia("(hover: hover)").matches) return
     const el = ref.current
     if (!el) return
     const rect = el.getBoundingClientRect()
